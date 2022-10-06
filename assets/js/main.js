@@ -11,8 +11,8 @@ const price = nKm * 0.21;
 console.log(price);
 
 // sconti 
- const discountValueUnder = ((price / 100)* 20) ;
- const discountValueOver =((price/100)*40) ;
+ const discountValueUnder = Math.round((price / 100)* 20) ;
+ const discountValueOver = Math.round((price/100)*40) ;
 
 
  //prezzi scontati
