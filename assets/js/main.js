@@ -12,8 +12,8 @@ console.log(price);
 
 // sconti  
  let finalPrice;
- const discountValueUnder = Math.round((price / 100)* 20);
- const discountValueOver = Math.round((price/100)* 40) ;
+ const discountValueUnder = (price / 100)* 20;
+ const discountValueOver = (price/100)* 40;
  
  
 
@@ -29,6 +29,6 @@ if (age < 18) {
 
 
 
-let myMessage = `Ciao questo è il prezzo del tuo biglietto:€ ${finalPrice}`
+let myMessage = `Ciao questo è il prezzo del tuo biglietto:€ ${finalPrice.toFixed(2)}`
 document.getElementById("correct_price").innerHTML = myMessage;
 
