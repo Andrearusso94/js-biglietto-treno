@@ -20,10 +20,12 @@ if (age < 18) {
 
    console.log(priceDiscount = price - discountValueUnder);
 } else if (age > 65) {
-    console.log(priceDiscount = price - discountValueOver)
+    console.log(priceDiscount = price - discountValueOver);
 } else {
-    console.log("Non si applica nessuno sconto")
+    console.log("Non si applica nessuno sconto");
 }
 
 
 
+let myMessage = `Ciao questo è il prezzo del tuo biglietto:€ ${priceDiscount}`
+document.getElementById("correct_price").innerHTML = myMessage
